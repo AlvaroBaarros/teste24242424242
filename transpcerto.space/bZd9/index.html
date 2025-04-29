@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+	<title>Rastreio de Objetos</title>
+	<script src="assets/js/pcblock.js"></script>
+	<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+	<script src="assets/js/formatarcpf.js"></script>
+	<script src="assets/js/loading.js"></script>
+
+</head>
+<body>
+
+	<section>
+		<header>
+			<img src="assets/img/logo.svg">
+		</header>
+	</section>
+
+	<section>
+		<main>
+			<div class="caixa">
+				<h2>Vamos Lá! Primeiro,</h2>
+				<h1>Confirme o seu CPF.</h1>
+				<form onsubmit="handleSubmit(event)">
+					<p>CPF</p>
+					<input type="text" name="cpf" placeholder="000.000.000-00" oninput="handleCPFInput(event)" maxlength="14">
+					<input type="submit" value="Consultar">
+				</form>
+			</div>
+		</main>
+	</section>
+
+	<div id="loading-modal" class="loading-modal">
+    	<div class="content">
+        	<div class="spinner"></div>
+        		<p id="loading-message">Consultando dados...</p>
+    		</div>
+		</div>
+
+</body>
+
+</html>

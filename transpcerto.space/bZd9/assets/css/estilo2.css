@@ -1,0 +1,252 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: trebuchet MS;
+}
+
+header{
+	padding: 0.8rem;
+	display: flex;
+	justify-content: space-between;
+	background-color: #F5F3F0;
+}
+
+header img{
+	height: 30px;
+}
+
+hr#one{
+	border: 1px solid #fff;
+}
+
+hr#two{
+	border: 1px solid yellow;
+}
+
+#espaco{
+	padding: 1.2rem;
+}
+
+#espaco2{
+	padding: 1.8rem;
+}
+
+div.principal p{
+	font-size: 1.3em;
+	margin-bottom: 2rem;
+}
+
+div.principal{
+	display: flex;
+	flex-direction: column;
+}
+
+.centro{
+	text-align: center;
+}
+
+div.principal h2{
+	color: red;
+	font-size: 1.2rem;
+	margin-bottom: 1.2rem;
+}
+
+div.principal span{
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+div.abas{
+	display: flex;
+	color: #277AB8;
+	font-size: 1rem;
+	align-items: center;
+}
+
+div.abas img{
+	height: 18px;
+	margin-right: 8px;
+}
+
+header#v2{
+	color: #277AB8;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+div.principal button{
+	background-color: #277AB8;
+	border-radius: 8px;
+	border: none;
+	color: #fff;
+	padding: 1rem;
+}
+
+#status{
+	animation: piscar 1s linear infinite;
+}
+
+div.anuncio{
+	overflow: hidden;
+}
+
+div.anuncio img{
+	height: 12vh;
+	width: auto;
+	border-radius: 15px;
+}
+
+@keyframes piscar{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px; /* Limita a largura da timeline */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; /* Adiciona espaçamento interno */
+    box-sizing: border-box;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px; /* Linha posicionada no lado esquerdo */
+    width: 4px;
+    height: 100%;
+    background-color: #f7a928; /* Cor da linha vertical */
+    z-index: 0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start; /* Garante que o texto e os ícones estejam alinhados na parte superior */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 2px solid white;
+    margin-right: 20px; /* Espaço entre o ícone e o texto */
+    flex-shrink: 0;
+}
+
+.timeline-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.timeline-content {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1; /* O conteúdo ocupa o restante do espaço */
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.timeline-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.timeline-content a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.timeline-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    background-color: #fbc414; /* Amarelo Correios */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto; /* Centraliza o container */
+    border-radius: 8px;
+}
+
+.footer-section {
+    width: calc(33% - 20px); /* Três seções com espaçamento */
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+.footer-section ul li i.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #000; /* Temporário para ícones */
+    border-radius: 50%; /* Ícone circular */
+    margin-right: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #000;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-section {
+        width: 100%;
+    }
+}
